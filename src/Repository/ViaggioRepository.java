@@ -14,7 +14,7 @@ public class ViaggioRepository {
                         "(idGita,idClasse) "+
                         "VALUES " +
                         "('" + viaggio.getIdGita() +"','"+ viaggio.getIdClasse() +"')";
-        //resta invariato
+
         try
         {
             Connection c = DbConnection.openConnection();

@@ -1,5 +1,5 @@
 package Service;
-import Entity.Viaggio;
+import Entity.*;
 import Repository.ViaggioRepository;
 
 import java.util.List;

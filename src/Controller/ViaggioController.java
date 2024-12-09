@@ -1,5 +1,8 @@
 package Controller;
+import Entity.Classe;
+import Entity.Gita;
 import Service.ClasseService;
+import Service.GitaService;
 import Service.ViaggioService;
 import Entity.Viaggio;
 
@@ -11,6 +14,9 @@ public class ViaggioController {
     GitaController gitaController = new GitaController();
     ViaggioService viaggioService = new ViaggioService();
     ClasseController classeController = new ClasseController();
+    GitaService gitaService = new GitaService();
+    ClasseService classeService = new ClasseService();
+
     public void createViaggio()
     {
         System.out.println("INSERISCI L'ID DELLA GITA DALLA LISTA");
@@ -19,7 +25,6 @@ public class ViaggioController {
         System.out.println("INSERISCI L'ID DELLA CLASSE DALLA LISTA");
         classeController.readClasse();
         int idClasse = scanner.nextInt();
-
         viaggioService.createViaggio(idGita,idClasse);
     }
 

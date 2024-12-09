@@ -182,7 +182,10 @@ public class Main {
                 {
                     System.out.println("---QUERY---");
                     System.out.println("Scegli cosa fare digitando il numero");
-                    System.out.println("1)tutte le classi che vanno a Firenze");
+                    System.out.println("1) TUTTE LE CLASSI CHE VANNO IN UN LUOGO");
+                    System.out.println("2) TUTTI I VIAGGI TENUTI DA UN DOCENTE");
+                    System.out.println("3) TUTTE LEE CLASSI E I RISPETTIVI COORDINATORI");
+                    System.out.println("4) TUTTI I VIAGGI");
                     System.out.println("9) INDIETRO");
 
                     choice2 = scanner.nextInt();
@@ -190,6 +193,18 @@ public class Main {
                     if (choice2 == 1)
                     {
                         queryController.query1();
+                    }
+                    else if (choice2 == 2)
+                    {
+                        queryController.query2();
+                    }
+                    else if (choice2 == 3)
+                    {
+                        queryController.query3();
+                    }
+                    else if (choice2 == 4)
+                    {
+                        queryController.query4();
                     }
                     else if (choice2 ==9)
                     {
